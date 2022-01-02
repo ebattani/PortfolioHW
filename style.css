@@ -1,0 +1,182 @@
+
+/* Universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Changing scroll behavior */
+html {
+    scroll-behavior: smooth;
+  }
+
+
+  /* Changing navigation bar */
+.navigation{
+    display: flex;
+    list-style-type: none;
+    
+}
+
+/* Changing navigation links */
+.nav-link{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+   
+}
+
+/* Getting rid of udnerline */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Main Header */
+h1{
+   font-size: 50px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Changing the whole header section */
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    background-color: wheat;
+   
+}
+
+/* About me section */
+.about-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 70rem;
+    margin: auto;
+}
+
+/* Changing image used in About Me */
+.about-me img{
+    height: 37.5rem;
+    width: 37.5rem;
+
+}
+
+/* Changing the bio text and border */
+.bio{
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Bio Header */
+.bio h2{
+    margin-bottom: 5px;
+}
+
+/* Bio Paragraph */
+.bio p {
+    line-height: 25px;
+    padding: 0.3rem 0;
+}
+
+/* CHanging the text in the More About section */
+.more-about{
+    padding: 1rem 6rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.more-about h2 {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .more-about p {
+    line-height: 25px;
+    padding: 0.4rem;
+  }
+
+
+  /* Changing the Projects section */
+  .projects-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .project-container {
+    text-align: center;
+    width: 21.875rem;
+    padding: 1rem;
+  }
+
+  .projects {
+    padding: 32px 0;
+    margin-top: 2rem;
+  }
+  
+  /* Pic sizes for projects */
+  .project-pic {
+    width: 65%;
+    height: 60%;
+  }
+  
+  /* Centering */
+  .projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-container p {
+    padding: 0.4rem;
+  }
+  
+  .project-title {
+    margin-bottom: 5px;
+  }
+  
+  /* Changing font for project text */
+  .project-details {
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 10px;
+  }
+
+  /* Contact section */
+  .contact{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  
+  /* Makes columns when under 768px */
+@media screen and (max-width: 768px) {
+ 
+ header,
+ section,
+ body{
+    flex-direction: column;
+  }
+
+}
